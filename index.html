@@ -80,9 +80,9 @@
 				
 					<a class="github" target="_blank" href="https://github.com/AndIMissU" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/u/3447900300" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/ai-chi-yu-de-yu-xiao-yao/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
 		</nav>
@@ -121,9 +121,9 @@
 					
 						<a class="github" target="_blank" href="https://github.com/AndIMissU" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/u/3447900300" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/ai-chi-yu-de-yu-xiao-yao/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 				</div>
 			</nav>
@@ -171,33 +171,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:<br>之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧</p>
-<h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p><strong>定义：</strong><br>:hover 选择器用于选择鼠标指针浮动在上面的元素。<br>:hover 选择器适用于所有元素</p>
-<p><strong>用法1：</strong><br>这个表示的是：当鼠标悬浮在a这个样式上的时候，a的背景颜色设置为黄色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a:hover</span><br><span class="line">    &#123; </span><br><span class="line">        background-color:yellow;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>这个是最普通的用法了，只是通过a改变了style<br><strong>用法2:</strong><br>使用a 控制其他块的样式：</p>
-<ul>
-<li>使用a控制a的子元素 b：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover .b &#123;</span><br><span class="line">        background-color:blue;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用a控制a的兄弟元素 c(同级元素)：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover + .c &#123;</span><br><span class="line">        color:red;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用a控制a的就近元素d：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover ~ .d &#123;</span><br><span class="line">        color:pink;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p> <strong>总结一下：</strong></p>
-<pre><code>1. 中间什么都不加  控制子元素；
-2. ‘+’ 控制同级元素（兄弟元素）；
-3. ‘～’ 控制就近元素；
-</code></pre><hr>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>用一个按钮控制一个盒子的运动状态，当鼠标移到按钮上方时，盒子停止运动，鼠标移开时，盒子继续运动</p>
-<p><strong>body代码：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;btn stop&quot;&gt;stop&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;animation&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>css样式：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .animation &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 100px;</span><br><span class="line">        background-color: pink;</span><br><span class="line">        margin: 100px auto;</span><br><span class="line">        animation: move 2s infinite alternate;</span><br><span class="line">        -webkit-animation: move 2s infinite alternate;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes move &#123;</span><br><span class="line">        0% &#123;</span><br><span class="line">            transform: translate(-100px, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        100% &#123;</span><br><span class="line">            transform: translate(100px, 0);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn &#123;</span><br><span class="line">        padding: 20px 50px;</span><br><span class="line">        background-color: pink;</span><br><span class="line">        color: white;</span><br><span class="line">        display: inline-block;</span><br><span class="line">    &#125;</span><br><span class="line">    .stop:hover ~ .animation &#123;</span><br><span class="line">        -webkit-animation-play-state: paused;</span><br><span class="line">        animation-play-state: paused;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
-
+        <p>有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:<br>之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧<br>定义和用法</p>
+        
+          <a class="article-more-a" href="/2018/01/18/CSS-hover选择器的使用/#more">more >></a>
+        
       
 
       
@@ -221,77 +198,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/01/18/CSS-hover选择器的使用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/17/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-17T12:58:06.505Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/17/hello-world/">展开全文 >></a>
         </p>
       
 
