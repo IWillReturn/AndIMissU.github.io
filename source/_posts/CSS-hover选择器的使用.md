@@ -7,7 +7,7 @@ tags: CSS
 ![hover使用方法][1]
 
 
-  [1]: /photos/CSS/css.png
+  [1]: /photos/CSS/css.jpg
 
 有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:
 之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧
