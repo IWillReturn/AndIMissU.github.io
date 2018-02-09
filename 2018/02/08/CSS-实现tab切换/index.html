@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://andimissu.github.io">
-  <title>CSS: hover选择器的使用 | AndIMissU</title>
+  <title>CSS: 实现tab切换 | AndIMissU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧定义和用法">
+  <meta name="description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS: hover选择器的使用">
-<meta property="og:url" content="https://andimissu.github.io/2018/01/18/CSS-hover选择器的使用/index.html">
+<meta property="og:title" content="CSS: 实现tab切换">
+<meta property="og:url" content="https://andimissu.github.io/2018/02/08/CSS-实现tab切换/index.html">
 <meta property="og:site_name" content="AndIMissU">
-<meta property="og:description" content="有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧定义和用法">
-<meta property="og:image" content="https://andimissu.github.io/photos/CSS/css.png">
-<meta property="og:updated_time" content="2018-02-09T07:02:03.258Z">
+<meta property="og:description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
+<meta property="og:image" content="https://andimissu.github.io/photos/CSS/css-tab.png">
+<meta property="og:updated_time" content="2018-02-09T07:02:03.259Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS: hover选择器的使用">
-<meta name="twitter:description" content="有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧定义和用法">
-<meta name="twitter:image" content="https://andimissu.github.io/photos/CSS/css.png">
+<meta name="twitter:title" content="CSS: 实现tab切换">
+<meta name="twitter:description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
+<meta name="twitter:image" content="https://andimissu.github.io/photos/CSS/css-tab.png">
   
     <link rel="alternative" href="/atom.xml" title="AndIMissU" type="application/atom+xml">
   
@@ -150,55 +150,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS-hover选择器的使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-CSS-实现tab切换" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS: hover选择器的使用
+      CSS: 实现tab切换
     </h1>
   
 
         
-        <a href="/2018/01/18/CSS-hover选择器的使用/" class="archive-article-date">
-  	<time datetime="2018-01-18T03:00:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-18</time>
+        <a href="/2018/02/08/CSS-实现tab切换/" class="archive-article-date">
+  	<time datetime="2018-02-08T13:43:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/photos/CSS/css.png" alt="hover使用方法"></p>
-<p>有些时候需要用到mouseover和mouseout这两个鼠标事件，但是写js又比较麻烦，还要添加监听事件，所以能用css解决的东西尽量yongcss解决，这样可以提高性能，下面说一下我对:hover 的了解:<br>之前在学计算机应用的时候，老师教我们使用了:hover选择器来完成下拉菜单，之前只知道怎么使用，并不知道为什么要这么用，现在记下怎么使用吧<br>定义和用法</p>
+        <p>纯CSS能实现tab切换，目前我知道的有两种方法：</p>
+<ul>
+<li>一种是用<code>&lt;a href=&quot;...&quot;&gt;</code>来写；</li>
+<li>结合<code>&lt;input&gt;</code>和 <code>&lt;label&gt;</code>实现；</li>
+</ul>
+<p>基本布局如下：<br><img src="/photos/CSS/css-tab.png" alt="基本布局"></p>
 <a id="more"></a>
-<hr>
-<p><strong>定义：</strong><br>:hover 选择器用于选择鼠标指针浮动在上面的元素。<br>:hover 选择器适用于所有元素</p>
-<p><strong>用法1：</strong><br>这个表示的是：当鼠标悬浮在a这个样式上的时候，a的背景颜色设置为黄色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a:hover</span><br><span class="line">    &#123; </span><br><span class="line">        background-color:yellow;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>这个是最普通的用法了，只是通过a改变了style<br><strong>用法2:</strong><br>使用a 控制其他块的样式：</p>
+<p>以下是两种方法的实现过程（以上的图片还画不了这么好看）：</p>
 <ul>
-<li>使用a控制a的子元素 b：</li>
+<li><strong>用<code>&lt;a href=&quot;...&quot;&gt;</code>实现tab切换</strong><ul>
+<li>kla</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover .b &#123;</span><br><span class="line">        background-color:blue;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用a控制a的兄弟元素 c(同级元素)：</li>
+</li>
+<li><strong>结合<code>&lt;input&gt;</code>和 <code>&lt;label&gt;</code>实现tab切换</strong><ul>
+<li>kla</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover + .c &#123;</span><br><span class="line">        color:red;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用a控制a的就近元素d：</li>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.a:hover ~ .d &#123;</span><br><span class="line">        color:pink;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p> <strong>总结一下：</strong></p>
-<pre><code>1. 中间什么都不加  控制子元素；
-2. ‘+’ 控制同级元素（兄弟元素）；
-3. ‘～’ 控制就近元素；
-</code></pre><hr>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>用一个按钮控制一个盒子的运动状态，当鼠标移到按钮上方时，盒子停止运动，鼠标移开时，盒子继续运动</p>
-<p><strong>body代码：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;btn stop&quot;&gt;stop&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;animation&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>css样式：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .animation &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 100px;</span><br><span class="line">        background-color: pink;</span><br><span class="line">        margin: 100px auto;</span><br><span class="line">        animation: move 2s infinite alternate;</span><br><span class="line">        -webkit-animation: move 2s infinite alternate;</span><br><span class="line">    &#125;</span><br><span class="line">    @keyframes move &#123;</span><br><span class="line">        0% &#123;</span><br><span class="line">            transform: translate(-100px, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        100% &#123;</span><br><span class="line">            transform: translate(100px, 0);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn &#123;</span><br><span class="line">        padding: 20px 50px;</span><br><span class="line">        background-color: pink;</span><br><span class="line">        color: white;</span><br><span class="line">        display: inline-block;</span><br><span class="line">    &#125;</span><br><span class="line">    .stop:hover ~ .animation &#123;</span><br><span class="line">        -webkit-animation-play-state: paused;</span><br><span class="line">        animation-play-state: paused;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -289,7 +278,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://andimissu.github.io/2018/01/18/CSS-hover选择器的使用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://andimissu.github.io/2018/02/08/CSS-实现tab切换/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -303,15 +292,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/02/08/CSS-实现tab切换/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          CSS: 实现tab切换
-        
-      </div>
-    </a>
   
+    <a href="/2018/01/18/CSS-hover选择器的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS: hover选择器的使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -337,7 +322,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="CSS-hover选择器的使用" data-title="CSS: hover选择器的使用" data-url="https://andimissu.github.io/2018/01/18/CSS-hover选择器的使用/"></div>
+	<div class="ds-thread" data-thread-key="CSS-实现tab切换" data-title="CSS: 实现tab切换" data-url="https://andimissu.github.io/2018/02/08/CSS-实现tab切换/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -359,7 +344,7 @@
   
 
   
-  <div id="SOHUCS" sid="CSS-hover选择器的使用" ></div> 
+  <div id="SOHUCS" sid="CSS-实现tab切换" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
