@@ -6,24 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://andimissu.github.io">
-  <title>CSS: 实现tab切换 | AndIMissU</title>
+  <title>捡起那些年丢掉的算法-递归算法 | Ashley的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
-<meta name="keywords" content="CSS">
+  <meta name="keywords" content="捡起那些年丢掉的算法,递归算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS: 实现tab切换">
-<meta property="og:url" content="https://andimissu.github.io/2018/02/08/CSS-实现tab切换-hexo/index.html">
-<meta property="og:site_name" content="AndIMissU">
-<meta property="og:description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
+<meta property="og:title" content="捡起那些年丢掉的算法-递归算法">
+<meta property="og:url" content="https://andimissu.github.io/2018/04/11/捡起那些年丢掉的算法-递归算法/index.html">
+<meta property="og:site_name" content="Ashley的个人博客">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://andimissu.github.io/photos/CSS/css-tab.png">
-<meta property="og:updated_time" content="2018-04-10T12:29:44.973Z">
+<meta property="og:updated_time" content="2018-04-11T13:22:24.792Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS: 实现tab切换">
-<meta name="twitter:description" content="纯CSS能实现tab切换，目前我知道的有两种方法：  一种是用&amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;来写； 结合&amp;lt;input&amp;gt;和 &amp;lt;label&amp;gt;实现；  基本布局如下：">
-<meta name="twitter:image" content="https://andimissu.github.io/photos/CSS/css-tab.png">
+<meta name="twitter:title" content="捡起那些年丢掉的算法-递归算法">
   
-    <link rel="alternative" href="/atom.xml" title="AndIMissU" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Ashley的个人博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -53,7 +48,7 @@
 			<img src="/img/mianPic.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">AndIMissU</a></h1>
+		  <h1 class="header-author"><a href="/">Ashley</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">Writing code is keeping my heart beating only reason</p>
@@ -115,7 +110,7 @@
 				<img src="/img/mianPic.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">AndIMissU</h1>
+			  <h1 class="header-author js-header-author">Ashley</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Writing code is keeping my heart beating only reason<i class="icon icon-quo-right"></i></p>
@@ -157,20 +152,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS-实现tab切换-hexo" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-捡起那些年丢掉的算法-递归算法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS: 实现tab切换
+      捡起那些年丢掉的算法-递归算法
     </h1>
   
 
         
-        <a href="/2018/02/08/CSS-实现tab切换-hexo/" class="archive-article-date">
-  	<time datetime="2018-02-08T13:43:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-08</time>
+        <a href="/2018/04/11/捡起那些年丢掉的算法-递归算法/" class="archive-article-date">
+  	<time datetime="2018-04-11T13:21:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
 </a>
         
         
@@ -184,25 +179,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>纯CSS能实现tab切换，目前我知道的有两种方法：</p>
-<ul>
-<li>一种是用<code>&lt;a href=&quot;...&quot;&gt;</code>来写；</li>
-<li>结合<code>&lt;input&gt;</code>和 <code>&lt;label&gt;</code>实现；</li>
-</ul>
-<p>基本布局如下：<br><img src="/photos/CSS/css-tab.png" alt="基本布局"></p>
-<a id="more"></a>
-<p>以下是两种方法的实现过程（以上的图片还画不了这么好看）：</p>
-<ul>
-<li><strong>用<code>&lt;a href=&quot;...&quot;&gt;</code>实现tab切换</strong><ul>
-<li>kla</li>
-</ul>
-</li>
-<li><strong>结合<code>&lt;input&gt;</code>和 <code>&lt;label&gt;</code>实现tab切换</strong><ul>
-<li>kla</li>
-</ul>
-</li>
-</ul>
-
+        <a id="more"></a>
       
 
       
@@ -236,7 +213,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">捡起那些年丢掉的算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">递归算法</a>
         		</li>
       		
 		</ul>
@@ -292,7 +273,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://andimissu.github.io/2018/02/08/CSS-实现tab切换-hexo/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://andimissu.github.io/2018/04/11/捡起那些年丢掉的算法-递归算法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,18 +290,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/10/捡起那些年丢掉的算法-递归算法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          捡起那些年丢掉的算法-递归算法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/01/18/CSS-hover选择器的使用/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS:hover选择器的使用</div>
+    <a href="/2018/02/08/CSS-实现tab切换/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS: 实现tab切换</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -348,7 +320,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="CSS-实现tab切换-hexo" data-title="CSS: 实现tab切换" data-url="https://andimissu.github.io/2018/02/08/CSS-实现tab切换-hexo/"></div>
+	<div class="ds-thread" data-thread-key="捡起那些年丢掉的算法-递归算法" data-title="捡起那些年丢掉的算法-递归算法" data-url="https://andimissu.github.io/2018/04/11/捡起那些年丢掉的算法-递归算法/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -399,7 +371,7 @@
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
-    		&copy; 2018 AndIMissU
+    		&copy; 2018 Ashley
     </div>
   </div>
   <span id="busuanzi_container_site_uv"> 
@@ -482,15 +454,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">捡起那些年丢掉的算法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">递归算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
             
             <div class="clearfix"></div>
